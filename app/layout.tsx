@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" className="h-full" suppressHydrationWarning>
       <body className="bg-background text-foreground h-full">
         <ThemeProvider
           attribute="class"
@@ -16,11 +16,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <nav className="absolute top-4 left-4">
-            <Link href='/'>
-              <p className="text-md underline text-red-500">Macros v4</p>
-            </Link>
-          </nav>
           <main className="h-full">
             {children}
           </main>

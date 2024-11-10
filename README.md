@@ -20,4 +20,4 @@ I want it to work on my phone.
 
 ## Future:
 - Setup SMTP mail server so others can use it lol
-- Epic UI
+- Epic UI2
